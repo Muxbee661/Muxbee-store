@@ -502,6 +502,14 @@ nav.active {
   gap: 20px;
 }
 
+.accessories{
+  margin-top: 90px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+}
+
 .men-card {
    width: 100%;
   background: #e6dfd3;
@@ -556,7 +564,11 @@ nav.active {
     grid-template-columns: repeat(2, 1fr);
     padding-left: 7px;
   }
-  
+
+  .accessories{
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 7px;
+  }
   .men-card{
     width: 100%;
   }
@@ -578,3 +590,28 @@ nav.active {
   }
 }
 
+
+/* add to cart count */
+.cart-badge {
+  display: none;              /* hidden until first add */
+  background: #a37b51;;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  min-width: 22px;
+  height: 22px;
+  line-height: 22px;
+  text-align: center;
+  border-radius: 50%;
+  padding: 0 5px;
+  margin-left: 8px;
+  vertical-align: middle;
+  box-shadow:
+  2px 2px 3px rgba(0, 0, 0, 0.2),
+  -2px -2px 3px rgba(255, 255, 255, 0.5);
+  border: none;
+}
+
+.cart-badge.show {
+  display: inline-block;
+}
