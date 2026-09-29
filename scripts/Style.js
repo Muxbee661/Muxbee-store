@@ -2,7 +2,9 @@ function menu() {
   document.getElementById('nav').classList.toggle("active");
 }
 
-const cart = []
+window.menu = menu;
+
+import { cart } from '../data/cart.js';
 
 
 document.querySelectorAll('.btn-add')
@@ -25,14 +27,33 @@ document.querySelectorAll('.btn-add')
        productId: productId,
        quantity:1
      })
-     }    
+     }   
+
+     let cartQuantity = 0;
+
+      cart.forEach((item) => {
+        cartQuantity += item.quantity;
+      });
+      
+      const badge = document.querySelector('.cart-badge');
+      
+      badge.innerHTML = cartQuantity;
+      
+      if (cartQuantity > 0) {
+        badge.classList.add('show');
+      } else {
+        badge.classList.remove('show');
+      }
+     console.log(cartQuantity)
    });
    console.log(cart)
+   
  });
+
 
 // add to cart count 
 
-let cartCount = 0;
+/*let cartCount = 0;
 const menuBadge = document.getElementById('menu-badge');
 
 document.querySelectorAll('.btn-add').forEach(btn => {
@@ -41,4 +62,7 @@ document.querySelectorAll('.btn-add').forEach(btn => {
     menuBadge.textContent = cartCount;
     menuBadge.classList.add('show');
   });
-});
+});*/
+
+
+
