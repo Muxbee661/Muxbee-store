@@ -1,4 +1,4 @@
-const products = [
+const products2 = [
 {
  image:'image/Dark Paradise Crop Top.jpg',
  name:'Dark Paradise Crop Top',
@@ -38,10 +38,10 @@ const products = [
 },
 ];
 
-let productsHTML ='';
+let productHTML ='';
 
-products.forEach((product) => {
-  productsHTML +=`
+products2.forEach((product) => {
+  productHTML +=`
       <div class="men-card">
           <img src="${product.image}">
           <h1>${product.name}</h1>
@@ -51,4 +51,4 @@ products.forEach((product) => {
   `;
 });
 
-document.querySelector('.women').innerHTML = productsHTML;
+document.querySelector('.women').innerHTML = productHTML;

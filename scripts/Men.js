@@ -52,3 +52,4 @@ products.forEach((product) => {
 });
 
 document.querySelector('.men').innerHTML = productsHTML;
+
