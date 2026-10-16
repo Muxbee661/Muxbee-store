@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <!-- Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  
+    <!-- Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+    <title>Muxbee</title>
+  
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="cart-page">
+    <header class="cart-hd">
+      <div><a href="home.html" class="logo">MUXBEE & CO</a></div>
+      <div>
+        <nav id="nav">
+          <ul>
+            <li><a href="Men.html">Men</a></li>
+            <li><a href="Women.html">Women</a></li>
+            <li><a href="#">Accessories</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#">Cart <span class="cart-badge" id="menu-badge">0</span></a></li>
+          </ul>
+        </nav>
+     </div>
+      <div>
+        <img src="15753894.png" alt="profile">
+        <img src="1170678.png" alt="add-to-cart">
+      </div>
+      <button class="hamburger" onclick="menu()">☰</button>
+    </header>
+    <main class="cart">
+    <!-- product goes in here --> 
+    </main>
+
+    <section class="cart-summary">
+      <h2>Order Summary</h2>
+    
+      <div class="summary-row">
+        <span>Items</span>
+        <span class="summary-quantity">0</span>
+      </div>
+    
+      <div class="summary-row">
+        <span>Subtotal</span>
+        <span class="summary-subtotal">₦0</span>
+      </div>
+    
+      <div class="summary-row summary-total">
+        <span>Total</span>
+        <span class="summary-total-price">₦0</span>
+      </div>
+    
+      <button class="place-order-btn">Place Order</button>
+    
+      <p class="order-message"></p>
+    </section>
+
+    <footer class="footer">
+  <h2 class="footer-logo">MUXBEE & CO</h2>
+  <p class="footer-tagline">Wear your story.</p>
+
+  <ul class="footer-links">
+    <li><a href="Men.html">Men</a></li>
+    <li><a href="Women.html">Women</a></li>
+    <li><a href="accessories.html">Accessories</a></li>
+    <li><a href="#about">About</a></li>
+  </ul>
+
+  <div class="footer-social">
+    <a href="#">Instagram</a>
+    <a href="#">Facebook</a>
+    <a href="#">WhatsApp</a>
+  </div>
+
+  <p class="footer-copy">© 2026 MUXBEE & CO. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts/menu.js"></script>
+    <script type="module" src="data/cart.js"></script>
+    <script type="module" src="scripts/style.js"></script>
+  </body>
+</html>

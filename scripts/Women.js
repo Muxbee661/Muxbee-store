@@ -1,4 +1,4 @@
-const products2 = [
+export const products2 = [
 {
  id: "mux-5c94e7",
  image:'image/Dark Paradise Crop Top.jpg',
@@ -61,4 +61,5 @@ products2.forEach((product) => {
   `;
 });
 
-document.querySelector('.women').innerHTML = productHTML;
+const container = document.querySelector('.women');
+if (container) container.innerHTML = productHTML;

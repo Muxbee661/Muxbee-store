@@ -1,10 +1,4 @@
-function menu() {
-  document.getElementById('nav').classList.toggle("active");
-}
-
-window.menu = menu;
-
-import { cart } from '../data/cart.js';
+import {cart, saveCart} from '../data/cart.js';
 
 
 document.querySelectorAll('.btn-add')
@@ -29,6 +23,8 @@ document.querySelectorAll('.btn-add')
      })
      }   
 
+     saveCart()
+
      let cartQuantity = 0;
 
       cart.forEach((item) => {
@@ -46,8 +42,7 @@ document.querySelectorAll('.btn-add')
       }
      console.log(cartQuantity)
    });
-   console.log(cart)
-   
+  
  });
 
 

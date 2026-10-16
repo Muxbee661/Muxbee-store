@@ -1,4 +1,4 @@
-const products3 = [
+export const products3 = [
 {
  id: "mux-d27f81",
  image:'image/Leather Shoulder Bag.jpg',
@@ -61,4 +61,5 @@ products3.forEach((product) => {
   `;
 });
 
-document.querySelector('.accessories').innerHTML = productHTML;
+const container = document.querySelector('.accessories');
+if (container) container.innerHTML = productHTML;
