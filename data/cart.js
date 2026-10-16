@@ -33,7 +33,7 @@ function renderCart() {
             : 'Looks like you haven’t found your favourites yet.'}
         </p>
 
-        <a href="home.html" class="continue-shopping">
+        <a href="index.html" class="continue-shopping">
           Continue Shopping
         </a>
       </div>
